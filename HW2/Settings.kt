@@ -17,7 +17,7 @@ import androidx.compose.ui.unit.dp
 import com.example.myapplication.ui.theme.MyApplicationTheme
 
 @Composable
-fun BackScreen(
+fun Settings(
     onNavigateToMessages: () -> Unit
 ) {
 
@@ -53,8 +53,8 @@ fun BackScreen(
 
 @Preview
 @Composable
-fun PreviewBackScreen() {
+fun PreviewSettings() {
     MyApplicationTheme {
-        BackScreen(onNavigateToMessages = {})
+        Settings(onNavigateToMessages = {})
     }
 }

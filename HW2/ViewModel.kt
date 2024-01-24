@@ -23,16 +23,16 @@ fun Navigation(
             ConversationScreen(
                 messages = SampleData.conversationSample,
                 onNavigateToBack = {
-                    navController.navigate("backScreen") {
-                        popUpTo("backScreen") {
+                    navController.navigate("settings") {
+                        popUpTo("settings") {
                             inclusive = true
                         }
                     } },
             )
         }
 
-        composable("backScreen") {
-            BackScreen(
+        composable("settings") {
+            Settings(
                 onNavigateToMessages = { navController.navigate("messages") {
                     popUpTo("messages") {
                         inclusive = true
